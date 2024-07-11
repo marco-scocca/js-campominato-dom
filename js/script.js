@@ -1,6 +1,12 @@
 function generateRandomNumbers(max) {
     return Math.floor(Math.random() * max + 1);
 }
+function generateBombsList(nums, NUM_OF_BOMBS) {
+    let bombslist = [];
+    for (let i = 0; i < NUM_OF_BOMBS; i++) {
+
+    }
+}
 
 function createSingleSquare(num sideNumber) {
     const square = document.createElement('div');
@@ -26,10 +32,12 @@ function.generateGrid(cellsNumber, sideNumber) {
 }
 
 function createNewGame() {
-    let bombs = [];
+
     let points = 0
     let gameOver = false;
+    const NUM_OF_BOMBS = 16;
     grid.innerHTML = '';
+    const bombs = generateBombsList(100, NUM_OF_BOMBS);
     generateGrid(100, 10);
 
 }
