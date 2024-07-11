@@ -26,6 +26,9 @@ function.generateGrid(cellsNumber, sideNumber) {
 }
 
 function createNewGame() {
+    let bombs = [];
+    let points = 0
+    let gameOver = false;
     grid.innerHTML = '';
     generateGrid(100, 10);
 
