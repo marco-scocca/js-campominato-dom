@@ -4,7 +4,12 @@ function generateRandomNumbers(max) {
 function generateBombsList(nums, NUM_OF_BOMBS) {
     let bombslist = [];
     for (let i = 0; i < NUM_OF_BOMBS; i++) {
-
+        while (condizione) {
+            let num = generateRandomNumbers(nums);
+            if (bombslist.includes(num) === false) {
+                bombslist.push(num);
+            }
+        }
     }
 }
 
