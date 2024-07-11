@@ -1,3 +1,7 @@
+function generateRandomNumbers(max) {
+    return Math.floor(Math.random() * max + 1);
+}
+
 function createSingleSquare(num sideNumber) {
     const square = document.createElement('div');
     square.classList.add('square');
@@ -13,7 +17,7 @@ function createSingleSquare(num sideNumber) {
 
 }
 
-function.generateGrid(cellsNumber, sideNumber){
+function.generateGrid(cellsNumber, sideNumber) {
     const grid = document.getElementById('grid');
     for (let i = 0; i < cellsNumber; i++) {
         let item = createSingleSquare(i, sideNumber)
